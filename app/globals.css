@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-primary: var(--neon-primary);
+  --color-neon-secondary: var(--neon-secondary); 
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-card: var(--bg-card);
+}
+
+:root {
+  /* Backgrounds */
+  --bg-primary:    #05080f;
+  --bg-secondary:  #080d18;
+  --bg-card:       #0d1420;
+  --bg-border:     #1a2540;
+
+  /* Blue Neon Accents */
+  --neon-primary:  #00c8ff;
+  --neon-secondary: #3b82f6;
+  --neon-tertiary: #0ea5e9;
+
+  /* Gradients */
+  --gradient-neon: linear-gradient(135deg, #00c8ff, #3b82f6);
+  --gradient-text: linear-gradient(90deg, #00c8ff, #60a5fa);
+
+  /* Glow Effects */
+  --glow-sm:  0 0 10px rgba(0, 200, 255, 0.3);
+  --glow-md:  0 0 20px rgba(0, 200, 255, 0.5);
+  --glow-lg:  0 0 40px rgba(0, 200, 255, 0.6), 0 0 80px rgba(59, 130, 246, 0.3);
+  --glow-text: 0 0 15px rgba(0, 200, 255, 0.7);
+
+  /* Text */
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #475569;
+
+  /* Fonts */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-code:    'Fira Code', monospace;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.font-code {
+  font-family: var(--font-code);
+}
+
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
