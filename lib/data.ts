@@ -86,7 +86,7 @@ export const projects = [
     title: "Descriptive AI",
     description: "A web application that generates detailed descriptions based on user-provided input, leveraging the GPT-2 model from Hugging Face Transformers. Built with Flask for backend and Streamlit for the frontend interface.",
     tech: ["Python", "Flask", "Streamlit", "Hugging Face Transformers", "GPT-2", "NLP", "Fine-Tuning"],
-    github: "https://github.com/vaibhavmodi45",
+    github: "https://github.com/vaibhavmodi45/Descriptive-AI-Main",
     live: "#",
     image: "/Project01.png"
   },
@@ -95,7 +95,7 @@ export const projects = [
     title: "Destination Delight",
     description: "A travel portal showcasing India's diverse destinations with sections for top attractions, travel blogs, and a contact form. Built with Google Maps API integration for location features.",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "Google Maps API"],
-    github: "https://github.com/vaibhavmodi45",
+    github: "https://github.com/vaibhavmodi45/Destination-Delight",
     live: "#",
     image: "/Project02.png"
   },
@@ -104,7 +104,7 @@ export const projects = [
     title: "EurOrbit — Weather Forecast App",
     description: "A dynamic weather forecast app integrating the 7Timer API to display a 7-day forecast for selected cities. Features asynchronous data fetching, responsive design, and interactive UI elements.",
     tech: ["HTML", "CSS", "JavaScript", "7Timer API", "Async APIs"],
-    github: "https://github.com/vaibhavmodi45",
+    github: "https://github.com/vaibhavmodi45/EurOrbit",
     live: "#",
     image: "/Project03.png"
   }

@@ -30,6 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+        <meta name="theme-color" content="#05080f" />
+      </head>
       <body className={`${spaceGrotesk.variable} ${inter.variable} ${firaCode.variable} antialiased selection:bg-[#00c8ff] selection:text-[#05080f]`}>
         <CustomCursor />
         {children}
