@@ -24,10 +24,18 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact Form Setup
+
+The contact form posts to a local Next.js route at `/api/contact`, which forwards submissions to a Google Apps Script web app that appends rows to your Google Sheet.
+
+Create a `.env.local` file in the project root with:
+
+```bash
+CONTACT_SHEET_WEBHOOK_URL="https://script.google.com/macros/s/AKfycbz_tBFRERtA_2f2IIMSBKyP3GygQQtQp6TGkZohFmf624SPUggxACnkc-7QUje0PTXf8g/exec"
+```
+
+After updating the env file, restart the dev server or rebuild the app.
 
 ## Deploy on Vercel
 
