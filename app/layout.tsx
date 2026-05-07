@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, Fira_Code } from "next/font/google";
+import CustomCursor from "@/components/ui/CustomCursor";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${spaceGrotesk.variable} ${inter.variable} ${firaCode.variable} antialiased selection:bg-[#00c8ff] selection:text-[#05080f]`}>
+        <CustomCursor />
         {children}
       </body>
     </html>

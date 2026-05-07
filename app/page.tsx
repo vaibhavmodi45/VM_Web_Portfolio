@@ -1,4 +1,12 @@
 import Hero from '@/components/sections/Hero';
+import About from '@/components/sections/About';
+import Experience from '@/components/sections/Experience';
+import Skills from '@/components/sections/Skills';
+import Projects from '@/components/sections/Projects';
+import Contact from '@/components/sections/Contact';
+import Footer from '@/components/sections/Footer';
+import Navbar from '@/components/Navbar';
+import ParticlesBg from '@/components/ui/ParticlesBg';
 
 export const metadata = {
   title: 'Vaibhav Modi | Portfolio',
@@ -7,15 +15,16 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-[var(--bg-primary)] min-h-screen text-[var(--text-primary)] font-body selection:bg-[var(--neon-primary)] selection:text-black">
-      {/* 1. Navbar will go here */}
+    <main className="bg-[var(--bg-primary)] min-h-screen text-[var(--text-primary)] font-body selection:bg-[var(--neon-primary)] selection:text-black overflow-x-hidden">
+      <ParticlesBg />
+      <Navbar />
       <Hero />
-      {/* 3. About */}
-      {/* 4. Experience */}
-      {/* 5. Skills */}
-      {/* 6. Projects */}
-      {/* 7. Contact */}
-      {/* 8. Footer */}
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   );
 }

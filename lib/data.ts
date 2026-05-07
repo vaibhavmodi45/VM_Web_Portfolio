@@ -33,6 +33,19 @@ export const socialLinks = {
 
 export const experiences = [
   {
+    id: 3,
+    title: "Software Development Engineer",
+    company: "DeepThought CultureTech Ventures",
+    duration: "January 2026 – Present",
+    highlights: [
+      "Built and enhanced full-stack web applications and community forum features using React, Next.js, TypeScript, and NodeBB",
+      "Developed backend APIs using Node.js and Express with MongoDB and PostgreSQL",
+      "Engineered automation workflows and scrapers using Google Apps Script",
+      "Managed deployment workflows and GitHub collaboration",
+      "Exploring AI-native development approaches for productivity and scalability"
+    ]
+  },
+  {
     id: 1,
     title: "Associate Cosmic Intern",
     company: "Cosmic 365AI",
@@ -75,7 +88,7 @@ export const projects = [
     tech: ["Python", "Flask", "Streamlit", "Hugging Face Transformers", "GPT-2", "NLP", "Fine-Tuning"],
     github: "https://github.com/vaibhavmodi45",
     live: "#",
-    image: "/img/Project01.png"
+    image: "/Project01.png"
   },
   {
     id: 2,
@@ -84,7 +97,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "Google Maps API"],
     github: "https://github.com/vaibhavmodi45",
     live: "#",
-    image: "/img/Project02.png"
+    image: "/Project02.png"
   },
   {
     id: 3,
@@ -93,15 +106,6 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "7Timer API", "Async APIs"],
     github: "https://github.com/vaibhavmodi45",
     live: "#",
-    image: "/img/Project03.png"
-  },
-  {
-    id: 4,
-    title: "Portfolio Website (v1)",
-    description: "A responsive personal portfolio showcasing skills, projects, and professional journey with smooth animations and interactive UI elements.",
-    tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "ScrollReveal", "jQuery"],
-    github: "https://github.com/vaibhavmodi45/my-portfolio-web",
-    live: "https://vaibhavmodi-portfolio.netlify.app/",
-    image: "/img/Project04.png"
+    image: "/Project03.png"
   }
 ];

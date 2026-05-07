@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { Github, Linkedin, Code2, Globe, MonitorPlay } from 'lucide-react';
+import { Code2, Globe, MonitorPlay } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { personalData, socialLinks } from '@/lib/data';
 import Link from 'next/link';
 
@@ -35,10 +36,10 @@ export default function Hero() {
           
           <div className="space-y-4">
             <h1 className="hero-text-1 text-5xl md:text-7xl font-bold leading-tight">
-              Crafting Digital
+              Building Things That
             </h1>
-            <h1 className="hero-text-2 text-5xl md:text-7xl font-bold leading-tight text-gradient" style={{textShadow: "var(--glow-text)"}}>
-              Masterpieces
+            <h1 className="hero-text-2 text-5xl md:text-7xl font-bold leading-tight text-gradient drop-shadow-[0_0_8px_var(--neon-primary)]">
+              Actually Matter
             </h1>
           </div>
 
@@ -49,10 +50,10 @@ export default function Hero() {
 
           <div className="hero-cta flex gap-4">
             <Link href={socialLinks.github} target="_blank" className="p-3 rounded-lg border border-[var(--bg-border)] hover:border-[var(--neon-primary)] hover:shadow-[var(--glow-sm)] transition-all bg-[var(--bg-card)]">
-              <Github className="w-5 h-5 text-[var(--text-secondary)] hover:text-[var(--neon-primary)]" />
+              <FaGithub className="w-5 h-5 text-[var(--text-secondary)] hover:text-[var(--neon-primary)]" />
             </Link>
             <Link href={socialLinks.linkedin} target="_blank" className="p-3 rounded-lg border border-[var(--bg-border)] hover:border-[var(--neon-primary)] hover:shadow-[var(--glow-sm)] transition-all bg-[var(--bg-card)]">
-              <Linkedin className="w-5 h-5 text-[var(--text-secondary)] hover:text-[var(--neon-primary)]" />
+              <FaLinkedin className="w-5 h-5 text-[var(--text-secondary)] hover:text-[var(--neon-primary)]" />
             </Link>
             <Link href={socialLinks.leetcode} target="_blank" className="p-3 rounded-lg border border-[var(--bg-border)] hover:border-[var(--neon-primary)] hover:shadow-[var(--glow-sm)] transition-all bg-[var(--bg-card)]">
               <Code2 className="w-5 h-5 text-[var(--text-secondary)] hover:text-[var(--neon-primary)]" />
